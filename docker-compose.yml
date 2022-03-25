@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  frontend-test:
+    image: mrevanishere/gan_frontend:latest
+    restart: always
+    ports:
+      - "3000:3000"
+    container_name: frontend-test
+  
+  backend-test:
+    image: mrevanishere/gan_backend:latest
+    restart: always
+    ports:
+      - "8088:8088"
+    container_name: backend-test
+
+
+
+  

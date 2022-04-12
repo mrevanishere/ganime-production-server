@@ -5,7 +5,7 @@ services:
     image: mrevanishere/gan_frontend:latest
     restart: always
     ports:
-      - "3000:3000"
+      - "80:80"
     container_name: frontend-test
   
   backend-test:
@@ -14,7 +14,3 @@ services:
     ports:
       - "8088:8088"
     container_name: backend-test
-
-
-
-  
